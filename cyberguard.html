@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberGuard – 3 Lecții de Securitate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #f4f8ff;
+      color: #1a2a4a;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: #0a2463;
+      color: white;
+      text-align: center;
+      padding: 40px 24px 36px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .logo-icon { font-size: 2rem; }
+
+    .logo-name {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: .03em;
+    }
+
+    .logo-name span { color: #00c896; }
+
+    header h1 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.72);
+      max-width: 460px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 36px 20px 56px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* ── CARD ── */
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 26px 26px 22px;
+      border-left: 5px solid #0a2463;
+      box-shadow: 0 2px 12px rgba(10,36,99,.07);
+    }
+
+    .card.green { border-left-color: #00c896; }
+    .card.teal  { border-left-color: #1b8fa8; }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .card-num {
+      background: #0a2463;
+      color: white;
+      font-weight: 800;
+      font-size: .8rem;
+      min-width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .card.green .card-num { background: #00c896; }
+    .card.teal  .card-num { background: #1b8fa8; }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #0a2463;
+      line-height: 1.4;
+    }
+
+    .card.green .card-title { color: #007a5e; }
+    .card.teal  .card-title { color: #1b6a80; }
+
+    .card-body {
+      font-size: .93rem;
+      line-height: 1.78;
+      color: #3a4a6a;
+    }
+
+    .card-body strong {
+      color: #0a2463;
+      font-weight: 700;
+    }
+
+    .card.green .card-body strong { color: #007a5e; }
+    .card.teal  .card-body strong { color: #1b6a80; }
+
+    .tip {
+      margin-top: 14px;
+      background: #f0f6ff;
+      border-radius: 10px;
+      padding: 11px 15px;
+      font-size: .87rem;
+      color: #4a5a7a;
+      line-height: 1.6;
+    }
+
+    .card.green .tip { background: #f0fdf8; }
+    .card.teal  .tip { background: #f0fafd; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 22px;
+      font-size: .8rem;
+      color: #9aabcc;
+      border-top: 1px solid #dde8f5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <span class="logo-icon">🛡️</span>
+      <span class="logo-name">Cyber<span>Guard</span></span>
+    </div>
+    <h1>Trei lecții scurte despre cum să te ferești de capcanele digitale</h1>
+  </header>
+
+  <main>
+
+    <!-- LECȚIA 1 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-num">1</div>
+        <div class="card-title">Ai scanat codul QR. Bun, dar ai fi făcut-o și dacă era periculos?</div>
+      </div>
+      <p class="card-body">
+        Dacă ai ajuns aici pentru că prezentarea noastră ți-a câștigat <strong>interesul și încrederea</strong>,
+        îți mulțumim sincer – și îți spunem că tocmai ai demonstrat ceva important:
+        <strong>încrederea se poate câștiga ușor</strong>.
+        <br/><br/>
+        Atacatorii fac exact același lucru. O prezentare convingătoare, un cod QR, o promisiune frumoasă –
+        și gata, ești pe un site periculos. Poate chiar ești victima unui atac chiar acum 😄.
+        Diferența dintre noi și ei e simplă: <strong>intenția</strong>.
+      </p>
+      <div class="tip">
+        💡 Nu scana coduri QR din surse necunoscute – mai ales în spații publice, pe afișe sau flyere nesolicitate.
+      </div>
+    </div>
+
+    <!-- LECȚIA 2 -->
+    <div class="card green">
+      <div class="card-header">
+        <div class="card-num">2</div>
+        <div class="card-title">„Gratuit" – cel mai scump cuvânt de pe internet</div>
+      </div>
+      <p class="card-body">
+        Pe internet, <strong>„gratuit"</strong> e un cuvânt care atrage instant atenția. Și tocmai de aceea
+        e folosit atât de des ca momeală. În spatele etichetei de <strong>GRATIS</strong> se pot ascunde
+        costuri exorbitante – nu neapărat în bani, ci în ceva uneori mai valoros.
+        <br/><br/>
+        Datele tale personale, accesul la conturi, numărul tău de telefon, intimitatea ta –
+        toate au o valoare reală pe piața neagră. Când un serviciu nu te costă nimic,
+        de obicei <strong>tu ești produsul</strong>.
+      </p>
+      <div class="tip">
+        💡 Înainte să accepți ceva „gratuit" online, întreabă-te: ce ofer eu în schimb, chiar dacă nu îmi dau seama?
+      </div>
+    </div>
+
+    <!-- LECȚIA 3 -->
+    <div class="card teal">
+      <div class="card-header">
+        <div class="card-num">3</div>
+        <div class="card-title">O oportunitate uriașă poate face banii praf și pulbere</div>
+      </div>
+      <p class="card-body">
+        Pe net, uneori o oportunitate care pare că valorează <strong>mai mult decât toți banii</strong>
+        poate să facă exact opusul – să-i transforme în <strong>praf și pulbere</strong>.
+        <br/><br/>
+        Investiții cu randamente garantate, crypto miraculoasă, scheme de îmbogățire rapidă –
+        toate sună convingător, toate promit mult. Dacă pare prea bine ca să fie adevărat,
+        <strong>aproape sigur nu este adevărat</strong>.
+      </p>
+      <div class="tip">
+        💡 Verifică întotdeauna sursa și documentează-te înainte de orice decizie financiară online.
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2025 CyberGuard · Proiect de Educație Antreprenorială · Securitate Cibernetică
+  </footer>
+
+</body>
+</html>
